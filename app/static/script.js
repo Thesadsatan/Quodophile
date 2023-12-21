@@ -153,53 +153,5 @@ generateBtn.addEventListener('click', () => {
     });
 });
 
-// menu.addEventListener('click', () => {
-//     console.log('11')
-//     if (menu.classList.contains("active")) {
-//         gsap.to(".links", {x: "100%"});
-//         gsap.to("body", { filter: "grayscale(0)"});
-//         gsap.set("body", {overflow: "auto"});
-//         gsap.set("body", {overflowX: "hidden"});
-//     }else{
-//         gsap.to(".links", {x: "0%"});
-//         gsap.to('#menu', {zIndex: "8"});
-//         gsap.to("body", { filter: "grayscale(80%)"});
-//         gsap.fromTo(".links a", 
-//                     { opacity: 0, y: 0 }, 
-//                     { opacity: 1, y:20, delay: 0.25, stagger: 0.25 });
-//         gsap.set('body', {overflow: "hidden"})
-                          
-//     }      
-//     menu.classList.toggle("active");
-// });
-
-// // set up the btn if the user wants to save the generate quote on Generate Random Quote page
-// grQuoteAddToDb.addEventListener('click', () => {
-
-//     // create a JSON object for grQuote and grAuthor ready to POST to DB upon request
-//     const grQuoteAddToDbObject = { 
-//         quote: grQuote.innerHTML,
-//         author: grAuthor.innerHTML
-//     };
-
-//     console.log(JSON.stringify(grQuoteAddToDbObject));
-
-//     // make a POST request to backend and POST the grQuote and grAuthor
-//     fetch('http://127.0.0.1:5000/random', {
-        
-//         // determine the method 
-//         method: "POST",
-
-//         // create the header and declare it's a JSON posted content with content type application/json
-//         headers: {
-//             "Content-Type": "application/json",
-//         },
-
-//         // assign the body of the POST request 
-//         body: JSON.stringify(grQuoteAddToDbObject),
-//     });
-//     alert('The Quote has been saved !')
-// });
-
 
 
